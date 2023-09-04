@@ -28,5 +28,6 @@ const record = {
 const obsRecord = new Observable(record);
 obsRecord.subscribe(record => console.log(record));
 obsRecord.update(record => {
-    record.title = "UFO 1982 Research - CANCELLED"
+    record.title = "UFO 1982 Research - CANCELLED";
+    return record;
 });
